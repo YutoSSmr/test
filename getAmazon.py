@@ -11,7 +11,7 @@ from sqlalchemy import column
 def getRankInfo(res):
     rowNUm = 1
     rowNum2 = 2
-    wb = openpyxl.load_workbook('amazonRankData.xlsx')
+    wb = openpyxl.load_workbook('amazonRankData.xls')
     ws = wb['Sheet1']
     #テキスト取得
     soup = BeautifulSoup(res.text,"html.parser")
